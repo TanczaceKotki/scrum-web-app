@@ -16,8 +16,7 @@ arn-CL
 ar-OM
 ar-QA
 ar-SY
-ar-TN
-ar-YE
+ar-TN ar-YE
 as-IN
 az-Cyrl-AZ
 az-Latn-AZ
