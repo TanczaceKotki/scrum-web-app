@@ -11,7 +11,7 @@
     <title></title>
 </head>
 <body>
-<form method="post" action="registration.jsp">
+<form action="${pageContext.request.contextPath}/signup" method="post">
   <table border="1" width="30%" cellpadding="5">
     <thead>
     <tr>
@@ -20,8 +20,12 @@
     </thead>
     <tbody>
     <tr>
-      <td>Login</td>
+      <td>First name</td>
       <td><input type="text" name="fname" value="" /></td>
+    </tr>
+    <tr>
+        <td>Second name</td>
+        <td><input type="text" name="sname" value="" /></td>
     </tr>
     <tr>
       <td>Email</td>
