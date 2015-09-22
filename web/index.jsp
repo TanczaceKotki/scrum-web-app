@@ -11,13 +11,5 @@
     <title></title>
   </head>
   <body>
-<%
-  for(int i=0; i<100; i++) {
-    %>
-<%= i%>
-<%
-  }
-
-%>
   </body>
 </html>
