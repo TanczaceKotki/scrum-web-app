@@ -1,4 +1,5 @@
 package com.pega.tutorial;
+import com.mysql.jdbc.jdbc2.optional.MysqlDataSource;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -20,10 +21,9 @@ public class MyServlet extends HttpServlet {
         Credential credential = new Credential(name, password);
 
         try {
-            Class.forName("org.postgresql.Driver");
-            Connection connection = null;
-            connection = DriverManager.getConnection(
-                    "jdbc:mysql://10.20.92.42:3306/FollowTheGenre", "username", "password");
+            JDBCConnector jdbcConnector = new JDBCConnector();
+            jdbcConnector.connect();
+
         } catch (Exception e) {
             e.printStackTrace();
         }
