@@ -11,8 +11,11 @@
     <title></title>
   </head>
   <body>
+<<<<<<< HEAD
 
   <%@ include file="sign_in.jsp"%>
 
+=======
+>>>>>>> 59dae65216eb65f85af896bbac6987c0819994c6
   </body>
 </html>
