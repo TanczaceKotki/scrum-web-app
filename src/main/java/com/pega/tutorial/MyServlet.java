@@ -6,6 +6,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
 
 @WebServlet("/myservlet")
 public class MyServlet extends HttpServlet {
@@ -16,6 +18,16 @@ public class MyServlet extends HttpServlet {
         String password = request.getParameter("password");
 
         Credential credential = new Credential(name, password);
+
+        try {
+            Class.forName("org.postgresql.Driver");
+            Connection connection = null;
+            connection = DriverManager.getConnection(
+                    "jdbc:mysql://10.20.92.42:3306/FollowTheGenre", "username", "password");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
 
         if(name.equals("Guest")) {
 
