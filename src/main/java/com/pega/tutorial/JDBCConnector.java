@@ -10,8 +10,8 @@ package com.pega.tutorial;
         static final String USER = "root";
         static final String PASS = "";
 
-        public void connect() throws Exception {
+        public Connection connect() throws Exception {
             Class.forName(JDBC_DRIVER);
-            Connection conn = DriverManager.getConnection(DB_URL, "root", "");
+            return DriverManager.getConnection(DB_URL, "root", "");
         }
 }
