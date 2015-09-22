@@ -11,7 +11,9 @@
     <title></title>
   </head>
   <body>
-  <%@ include file="sign_in.jsp"%>
+  <h1> Welcome </h1>
+
+  <%@ include file="signin.jsp"%>
 
   </body>
 </html>

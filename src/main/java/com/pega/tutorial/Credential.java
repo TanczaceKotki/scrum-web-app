@@ -5,14 +5,24 @@ package com.pega.tutorial;
  */
 public class Credential {
     private String name;
+    private String email;
     private String password;
 
-    public Credential(String name, String password) {
+    public Credential(String name, String email, String password) {
         this.name = name;
+        this.email = email;
         this.password = password;
     }
 
-    public boolean verifyPassword(String password) {
-        return (this.password.equals(password));
+    public String getName() {
+        return name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getPassword() {
+        return password;
     }
 }
