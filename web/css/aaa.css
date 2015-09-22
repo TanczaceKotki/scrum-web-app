@@ -1,3 +1,4 @@
 .jumbotron {
     background: url("../aaa.jpg") no-repeat center;
+    color: white !important;
 }
