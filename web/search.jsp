@@ -7,7 +7,7 @@
 
         <body>
         <h1>${name} ${email}</h1>
-        <table data-url="json/db.json" data-filter-control="true" data-toggle="table" data-show-columns="true" data-mobile-responsive="true" data-check-on-init="true" class="tab_unit table table-striped">
+        <table data-url="json/db.json" data-search="true" data-filter-control="true" data-toggle="table" data-show-columns="true" data-mobile-responsive="true" data-check-on-init="true" class="tab_unit table table-striped">
         <thead>
         <tr>
         <th data-field="genre" data-filter-control="input"  data-sortable="true">Genre</th>
