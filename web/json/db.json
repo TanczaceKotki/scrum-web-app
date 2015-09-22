@@ -1,0 +1,19 @@
+{
+    "books": [
+        {
+            "genre": "drama",
+            "author": "Adam Mickiewicz",
+            "title": "Pan Tadeusz"
+        },
+        {
+            "genre": "romance",
+            "author": "James Jameson",
+            "title": "Lorem Ipsum"
+        },
+        {
+            "genre": "sci-fi",
+            "author": "James Jameson",
+            "title": "Something"
+        }
+    ]
+}
